@@ -63,6 +63,10 @@
   flex-direction: inherit;
   justify-content: flex-start;
 
+  &.mud-table-sort-label-disabled {
+      cursor: auto;
+  }
+
   @media(hover: hover) and (pointer: fine) {
     &:hover {
       color: var(--mud-palette-action-default);

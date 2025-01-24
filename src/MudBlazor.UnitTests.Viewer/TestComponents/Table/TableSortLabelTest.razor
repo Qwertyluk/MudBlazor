@@ -1,0 +1,12 @@
+﻿<MudTable Items="_data" T="string">
+    <HeaderContent>
+        <MudTh><MudTableSortLabel Enabled="SortEnabled" SortBy="new Func<string, object>(x => x)"></MudTableSortLabel></MudTh>
+    </HeaderContent>
+</MudTable>
+
+@code {
+    private string[] _data = ["test"];
+
+    [Parameter]
+    public bool SortEnabled { get; set; }
+}
