@@ -10,7 +10,7 @@
 <MudSwitch @bind-Value="_sortEnabled">Sort Enabled</MudSwitch>
 
 @code {
-    public static string __description__ = "The cursor icon should change for sortable table headers when sorting is disabled.";
+    public static string __description__ = "Table sortable header styles should not be applied when sorting is disabled.";
 
     private string[] _data = ["A", "B", "C"];
     private bool _sortEnabled;

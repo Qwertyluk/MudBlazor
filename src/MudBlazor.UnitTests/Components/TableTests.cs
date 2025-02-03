@@ -129,8 +129,8 @@ namespace MudBlazor.UnitTests.Components
             tableSortLabel
                 .Find("span")
                 .GetAttribute("class")
-                .Contains("mud-table-sort-label-disabled")
-                .Should().Be(!sortEnabled);
+                .Contains("mud-button-root")
+                .Should().Be(sortEnabled);
         }
 
         /// <summary>
